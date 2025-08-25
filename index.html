@@ -3,64 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prachi Darji - UI/UX Designer Portfolio</title>
+    <title>Prachi Darji - UI & UX Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&family=DM+Sans:wght@500;600&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=DM+Sans:wght@500;600&family=Poppins:wght@400;500;600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-menu">
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#services" class="nav-link">Services</a>
                 <a href="#projects" class="nav-link">My Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hello-badge">
-                        <span>Hello!</span>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <!-- Hello bubble -->
+            <div class="hello-bubble">
+                <span>Hello!</span>
+            </div>
+            
+            <!-- Main title -->
+            <h1 class="hero-title">
+                I'm <span class="highlight">Prachi Darji</span>
+            </h1>
+            <h2 class="hero-subtitle">UI & UX Designer</h2>
+            
+            <!-- Description -->
+            <p class="hero-description">
+                Passionate UI/UX designer skilled in Figma, with a strong eye for clean layouts and intuitive user experiences. I create seamless designs that meet users' expectations.
+            </p>
+            
+            <!-- Profile image with background -->
+            <div class="profile-container">
+                <div class="profile-background"></div>
+                <img src="./images/profile-photo.png" alt="Prachi Darji" class="profile-image">
+                
+                <!-- Floating button -->
+                <div class="floating-button">
+                    <div class="button-primary">
+                        <span>Portfolio</span>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 19l14-14M5 5h14v14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h1 class="hero-title">I'm Prachi Darji</h1>
-                    <h2 class="hero-subtitle">UI & UX Designer</h2>
-                    <p class="hero-description">
-                        Passionate UI/UX designer skilled in Figma, with a strong
-                        eye for clean layouts and intuitive user experiences. I
-                        create seamless designs that meet users' expectations.
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary">
-                            <span>Portfolio</span>
-                            <i class="fas fa-arrow-up-right"></i>
-                        </button>
-                        <button class="btn btn-secondary">Hire me</button>
+                    <div class="button-secondary">
+                        <span>Hire me</span>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/profile-photo.png" alt="Prachi Darji" class="profile-photo">
                 </div>
             </div>
         </div>
-        <div class="hero-ornament"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-left">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="education">
-                        <h3>Education</h3>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-background">
+            <img src="./images/hero-background.png" alt="About Background" class="about-bg-image">
+            <div class="about-overlay"></div>
+        </div>
+        
+        <div class="about-content">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Education</h3>
                         <div class="education-item">
                             <h4>Bachelor of Engineering in Information Technology</h4>
                             <p>CGPA: 8.84<br>Mumbai, Maharashtra</p>
@@ -75,26 +92,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-right">
-                    <div class="about-text">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <p>I design with a user-first mindset, balancing aesthetics with functionality to create meaningful digital experiences.</p>
-                        <p>My work process involves understanding problems, translating them into wireframes, and refining them into polished interfaces.</p>
-                        <p>Beyond technical skills, I value clarity, accessibility, and consistent design systems.</p>
-                        <p>Looking forward to contributing meaningfully in a professional environment while growing both personally and technically. I believe great design is not just about how it looks, but how it works.</p>
                     </div>
-                    <div class="design-process">
-                        <div class="process-line"></div>
-                        <div class="process-steps">
-                            <div class="process-step">
-                                <div class="step-circle"></div>
-                            </div>
-                            <div class="process-step">
-                                <div class="step-circle"></div>
-                            </div>
-                            <div class="process-step">
-                                <div class="step-circle"></div>
-                            </div>
-                        </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p>My work process involves understanding problems, translating them into wireframes, and refining them into polished interfaces.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p>Beyond technical skills, I value clarity, accessibility, and consistent design systems.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p>Looking forward to contributing meaningfully in a professional environment while growing both personally and technically. I believe great design is not just about how it looks, but how it works.</p>
                     </div>
                 </div>
             </div>
@@ -102,274 +125,421 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/ui-ux-design.png" alt="UI/UX Design">
-                        <div class="service-overlay">
-                            <i class="fas fa-arrow-up-right"></i>
-                        </div>
-                    </div>
+    <section id="services" class="services-section">
+        <h2 class="section-title">My <span class="highlight">Services</span></h2>
+        
+        <div class="services-grid">
+            <!-- UI/UX Design Service -->
+            <div class="service-card">
+                <div class="service-header">
                     <h3>UI/UX Design</h3>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/web-design.png" alt="Web Design">
-                        <div class="service-overlay">
-                            <i class="fas fa-arrow-up-right"></i>
-                        </div>
-                    </div>
+                <div class="service-image">
+                    <img src="./images/ui-ux-design.png" alt="UI/UX Design">
+                </div>
+                <div class="service-button">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 19l14-14M5 5h14v14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Web Design Service -->
+            <div class="service-card">
+                <div class="service-header">
                     <h3>Web Design</h3>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/landing-page.png" alt="Landing Page">
-                        <div class="service-overlay">
-                            <i class="fas fa-arrow-up-right"></i>
-                        </div>
-                    </div>
+                <div class="service-image">
+                    <img src="./images/web-design.png" alt="Web Design">
+                </div>
+                <div class="service-button">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 19l14-14M5 5h14v14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <!-- Landing Page Service -->
+            <div class="service-card">
+                <div class="service-header">
                     <h3>Landing Page</h3>
                 </div>
+                <div class="service-image">
+                    <img src="./images/landing-page.png" alt="Landing Page">
+                </div>
+                <div class="service-button">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 19l14-14M5 5h14v14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Lets have a look at my Portfolio</h2>
-            
-            <!-- Brandbay Project -->
-            <div class="project-item">
-                <div class="project-content">
-                    <h3 class="project-title">Brandbay</h3>
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Problem Statement</h4>
-                            <p>Users abandoned login, browsing, and checkout due to cluttered flows and weak personalization.</p>
+    <!-- Portfolio Section -->
+    <section id="projects" class="portfolio-section">
+        <h2 class="section-title">Lets have a look at my <span class="highlight">Portfolio</span></h2>
+        
+        <!-- Brandbay Project -->
+        <div class="project-showcase">
+            <div class="project-mockup">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <div class="status-bar">
+                                <div class="status-dot"></div>
+                                <div class="status-time">9:41</div>
+                            </div>
+                            <div class="app-title">Match Your Style</div>
                         </div>
-                        <div class="project-info">
-                            <h4>Target Audience</h4>
-                            <p>18–35 year-old fashion-forward, mobile-first shoppers seeking speed and style.</p>
+                        
+                        <div class="search-bar">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="rgba(0,0,0,0.5)" stroke-width="2"/>
+                            </svg>
+                            <span>Search</span>
                         </div>
-                        <div class="project-info">
-                            <h4>Key Design Features</h4>
-                            <ul>
-                                <li>Welcome & Login</li>
-                                <li>Home page</li>
-                                <li>Product Selection</li>
-                                <li>Cart Page</li>
-                            </ul>
+                        
+                        <div class="filter-tabs">
+                            <div class="filter-tab active">Trending Now</div>
+                            <div class="filter-tab">All</div>
+                            <div class="filter-tab">New</div>
                         </div>
-                        <div class="project-info">
-                            <h4>Timeline (2 Weeks)</h4>
-                            <p>Research → Wireframes → Visuals → Prototype & Test.</p>
-                        </div>
-                        <div class="project-info">
-                            <h4>Typography</h4>
-                            <p>Poppins Semibold/Medium/Regular</p>
-                        </div>
-                        <div class="project-info">
-                            <h4>Color Palette</h4>
-                            <div class="color-palette">
-                                <div class="color-circle" style="background: #FF8484;"></div>
-                                <div class="color-circle" style="background: #F94343;"></div>
-                                <div class="color-circle" style="background: #ED4A4A;"></div>
-                                <div class="color-circle" style="background: #1E1E1E;"></div>
-                                <div class="color-circle" style="background: #D9D9D9;"></div>
-                                <div class="color-circle" style="background: #FFFFFF;"></div>
+                        
+                        <div class="product-grid">
+                            <div class="product-item">
+                                <div class="product-image"></div>
+                                <div class="product-info">
+                                    <h4>Wool Blend Tee</h4>
+                                    <p>$45.9</p>
+                                </div>
+                                <div class="heart-icon"></div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"></div>
+                                <div class="product-info">
+                                    <h4>Deep Red Top</h4>
+                                    <p>$55.9</p>
+                                </div>
+                                <div class="heart-icon"></div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"></div>
+                                <div class="product-info">
+                                    <h4>Premium Blazer</h4>
+                                    <p>$60.9</p>
+                                </div>
+                                <div class="heart-icon"></div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image"></div>
+                                <div class="product-info">
+                                    <h4>White Tank Crop</h4>
+                                    <p>$30.9</p>
+                                </div>
+                                <div class="heart-icon"></div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h4>Solution</h4>
-                            <p>Designed a mobile-first journey with simplified login, personalized style feed, intuitive filters, and a sticky Add to Cart CTA.</p>
-                        </div>
-                        <div class="project-info">
-                            <h4>Outcome</h4>
-                            <p>Delivered a highly aesthetic, trend-driven, and user-centric interface that modernized the shopping experience, increased trust, and positioned BrandBay as a stylish, next-gen fashion platform.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-mockup">
-                    <img src="images/ui-ux-design.png" alt="Brandbay Mobile App">
-                </div>
-            </div>
-
-            <!-- ICEBACK Mastercard Project -->
-            <div class="project-item reverse">
-                <div class="project-content">
-                    <h3 class="project-title">ICEBACK Mastercard</h3>
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Problem Statement</h4>
-                            <p>Users lacked clarity on cashback benefits and the process to sign up, resulting in low engagement and conversions.</p>
-                        </div>
-                        <div class="project-info">
-                            <h4>Solution</h4>
-                            <p>Designed a premium landing page (desktop + mobile) with bold hero message, clear CTAs, cashback calculator, and climate impact storytelling.</p>
-                        </div>
-                        <div class="project-info">
-                            <h4>Outcome</h4>
-                            <p>Delivered a modern, aesthetic, and conversion-focused design that increased clarity, trust, and Mastercard sign-up potential.</p>
+                        
+                        <div class="bottom-nav">
+                            <div class="nav-item active">
+                                <svg width="29" height="25" viewBox="0 0 24 24" fill="#ED4A4A">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <div class="nav-item">
+                                <svg width="25" height="21" viewBox="0 0 24 24" fill="rgba(0,0,0,0.5)">
+                                    <path d="M3 6h18M3 12h18M3 18h18"/>
+                                </svg>
+                            </div>
+                            <div class="nav-item">
+                                <svg width="27" height="27" viewBox="0 0 24 24" fill="rgba(0,0,0,0.5)">
+                                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6"/>
+                                </svg>
+                            </div>
+                            <div class="nav-item">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="rgba(0,0,0,0.5)">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-mockup">
-                    <img src="images/landing-page.png" alt="ICEBACK Mastercard Landing Page">
-                </div>
             </div>
-
-            <!-- Flight Booking Project -->
-            <div class="project-item">
-                <div class="project-content">
-                    <h3 class="project-title">Flight Booking</h3>
-                    <div class="project-mockup">
-                        <img src="images/flight-booking.png" alt="Flight Booking App">
+            
+            <div class="project-details">
+                <h3 class="project-title">Brandbay</h3>
+                
+                <div class="project-info">
+                    <div class="info-section">
+                        <h4>Problem Statement</h4>
+                        <p>Users abandoned login, browsing, and checkout due to cluttered flows and weak personalization.</p>
                     </div>
-                </div>
-            </div>
-
-            <!-- Food Delivery Project -->
-            <div class="project-item">
-                <div class="project-content">
-                    <h3 class="project-title">Food Delivery</h3>
-                    <div class="project-mockup">
-                        <img src="images/food-delivery.png" alt="Food Delivery App">
+                    
+                    <div class="info-section">
+                        <h4>Solution</h4>
+                        <p>Designed a mobile-first journey with simplified login, personalized style feed, intuitive filters, and a sticky Add to Cart CTA.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Target Audience</h4>
+                        <p>18–35 year-old fashion-forward, mobile-first shoppers seeking speed and style.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Key Design Features</h4>
+                        <ul>
+                            <li>Welcome & Login</li>
+                            <li>Home page</li>
+                            <li>Product Selection</li>
+                            <li>Cart Page</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Timeline (2 Weeks)</h4>
+                        <p>Research → Wireframes → Visuals → Prototype & Test.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Typography</h4>
+                        <p>Poppins Semibold/Medium/Regular</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Color Palette</h4>
+                        <div class="color-palette">
+                            <div class="color-swatch" style="background: #FF8484;"></div>
+                            <div class="color-swatch" style="background: #F94343;"></div>
+                            <div class="color-swatch" style="background: #000000;"></div>
+                            <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #000;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Outcome</h4>
+                        <p>Delivered a highly aesthetic, trend-driven, and user-centric interface that modernized the shopping experience, increased trust, and positioned BrandBay as a stylish, next-gen fashion platform.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- ICEBACK Mastercard Project -->
+        <div class="project-showcase reverse">
+            <div class="project-details">
+                <h3 class="project-title">ICEBACK Mastercard</h3>
+                
+                <div class="project-info">
+                    <div class="info-section">
+                        <h4>Problem Statement</h4>
+                        <p>Users lacked clarity on cashback benefits and the process to sign up, resulting in low engagement and conversions.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Solution</h4>
+                        <p>Designed a premium landing page (desktop + mobile) with bold hero message, clear CTAs, cashback calculator, and climate impact storytelling.</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h4>Outcome</h4>
+                        <p>Delivered a modern, aesthetic, and conversion-focused design that increased clarity, trust, and Mastercard sign-up potential.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-mockup">
+                <div class="desktop-mockup">
+                    <img src="./images/landing-page.png" alt="ICEBACK Landing Page">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Projects -->
+        <div class="additional-projects">
+            <div class="project-card">
+                <img src="./images/flight-booking.png" alt="Flight Booking">
+                <h4>Flight Booking</h4>
+            </div>
+            <div class="project-card">
+                <img src="./images/food-delivery.png" alt="Food Delivery">
+                <h4>Food Delivery</h4>
+            </div>
+        </div>
+        
+        <div class="portfolio-controls">
+            <div class="pagination-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <button class="see-all-btn">See All</button>
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">HTML</div>
-                        <div class="skill-item">CSS</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">React</div>
-                    </div>
+    <!-- Skills & Expertise Section -->
+    <section class="skills-section">
+        <h2 class="section-title">Skills & <span class="highlight">Expertise</span></h2>
+        
+        <div class="skills-grid">
+            <div class="skill-column">
+                <h3>Frontend Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Styling Frameworks</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Tailwind CSS</div>
-                        <div class="skill-item">Bootstrap</div>
-                    </div>
+            </div>
+            
+            <div class="skill-column">
+                <h3>Styling Frameworks</h3>
+                <div class="skill-items">
+                    <div class="skill-item">Tailwind CSS</div>
+                    <div class="skill-item">Bootstrap</div>
                 </div>
-                <div class="skill-category">
-                    <h3>UI/UX & Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Wireframes</div>
-                        <div class="skill-item">Prototypes</div>
-                        <div class="skill-item">Figma</div>
-                        <div class="skill-item">Canva</div>
-                        <div class="skill-item">Sketch</div>
-                    </div>
+            </div>
+            
+            <div class="skill-column">
+                <h3>UI/UX & Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">Wireframes</div>
+                    <div class="skill-item">Prototypes</div>
+                    <div class="skill-item">Figma</div>
+                    <div class="skill-item">Canva</div>
+                    <div class="skill-item">Sketch</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Design Principles</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Typography</div>
-                        <div class="skill-item">Auto Layouts</div>
-                        <div class="skill-item">Component Based</div>
-                        <div class="skill-item">Responsive Design</div>
-                        <div class="skill-item">User Centricity</div>
-                    </div>
+            </div>
+            
+            <div class="skill-column">
+                <h3>Design Principles</h3>
+                <div class="skill-items">
+                    <div class="skill-item">Typography</div>
+                    <div class="skill-item">Auto Layouts</div>
+                    <div class="skill-item">Component Based</div>
+                    <div class="skill-item">Responsive Design</div>
+                    <div class="skill-item">User Centricity</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Hire Me Section -->
-    <section class="why-hire">
-        <div class="container">
-            <h2 class="section-title">Why Hire Me?</h2>
-            <div class="reasons-grid">
-                <div class="reason-item">
+    <section class="why-hire-section">
+        <h2 class="section-title">Why <span class="highlight">Hire Me</span>?</h2>
+        
+        <div class="hire-reasons">
+            <div class="reason-item">
+                <div class="arrow-icon">
+                    <svg width="36" height="0" viewBox="0 0 36 0" fill="none">
+                        <line x1="0" y1="0" x2="36" y2="0" stroke="#000000" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="reason-content">
                     <h3>Proven Design Expertise</h3>
                     <p>Delivered multiple UI/UX projects (e-commerce, food delivery, finance, travel, lifestyle) with a focus on usability and aesthetics.</p>
                 </div>
-                <div class="reason-item">
+            </div>
+            
+            <div class="reason-item">
+                <div class="arrow-icon">
+                    <svg width="36" height="0" viewBox="0 0 36 0" fill="none">
+                        <line x1="0" y1="0" x2="36" y2="0" stroke="#000000" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="reason-content">
                     <h3>User-Centered Approach</h3>
                     <p>Designs prioritize clarity, smooth interaction flows, and problem-solving aligned with user needs</p>
                 </div>
-                <div class="reason-item">
+            </div>
+            
+            <div class="reason-item">
+                <div class="arrow-icon">
+                    <svg width="36" height="0" viewBox="0 0 36 0" fill="none">
+                        <line x1="0" y1="0" x2="36" y2="0" stroke="#000000" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="reason-content">
                     <h3>Leadership & Collaboration</h3>
                     <p>Served as Digital Creative Head in Entrepreneurship Cell, successfully driving event branding and engagement</p>
                 </div>
             </div>
-            <div class="skills-rating">
-                <div class="skill-rating">
-                    <span>UX Design</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <div class="skill-rating">
-                    <span>App Design</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <div class="skill-rating">
-                    <span>Dashboard</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <div class="skill-rating">
-                    <span>Wireframe</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-                <div class="skill-rating">
-                    <span>User Research</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
         </div>
+        
+        <button class="hire-me-btn">Hire me</button>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Have an Awesome Project Idea? Let's Discuss</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Enter Email Address" class="form-input">
-                        </div>
-                        <button class="btn btn-primary">Send</button>
-                    </div>
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-banner">
+            <span>UX Design</span>
+            <div class="star">★</div>
+            <span>App Design</span>
+            <div class="star">★</div>
+            <span>Dashboard</span>
+            <div class="star">★</div>
+            <span>Wireframe</span>
+            <div class="star">★</div>
+            <span>User Research</span>
+            <div class="star">★</div>
+        </div>
+        
+        <h2 class="cta-title">Have an Awesome Project Idea? <span class="highlight">Let's Discuss</span></h2>
+        
+        <div class="contact-form">
+            <div class="input-group">
+                <div class="input-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#FD853A" stroke-width="2"/>
+                        <polyline points="22,6 12,13 2,6" stroke="#FD853A" stroke-width="2"/>
+                    </svg>
                 </div>
-                <button class="btn btn-outline">Hire me</button>
+                <input type="email" placeholder="Enter Email Address" class="email-input">
             </div>
+            <button class="send-btn">Send</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-info">
-                        <h3>Prachi Darji</h3>
-                        <p>Designing intuitive and aesthetic digital experiences<br>Mumbai, Maharashtra</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Prachi Darji</h3>
+                <p>Designing intuitive and aesthetic digital experiences</p>
+                <p>Mumbai, Maharashtra</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="footer-section">
+            </div>
+            
+            <div class="footer-center">
+                <div class="footer-column">
                     <h4>Navigation</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Service</a></li>
@@ -377,33 +547,48 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                
+                <div class="footer-column">
                     <h4>Contact</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li>+91 9619315759</li>
                         <li>prachid2903@gmail.com</li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                
+                <div class="footer-column">
                     <h4>Get the latest information</h4>
-                    <div class="newsletter">
+                    <div class="newsletter-form">
                         <input type="email" placeholder="Email Address" class="newsletter-input">
-                        <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                        <button class="newsletter-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="footer-bottom">
             <div class="footer-divider"></div>
-            <div class="footer-bottom">
+            <div class="footer-info">
                 <div class="copyright">
-                    <i class="far fa-copyright"></i>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M14.31 8c1.77 0 3.19 1.64 3.19 3.69 0 2.05-1.42 3.69-3.19 3.69"/>
+                    </svg>
                     <span>2025 PrachiDarji. All Rights Reserved.</span>
                 </div>
-                <div class="footer-legal">
-                    <a href="#">User Terms & Conditions</a> | 
+                <div class="footer-links">
+                    <a href="#">User Terms & Conditions</a>
+                    <span>|</span>
                     <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
+        
+        <button class="footer-hire-btn">Hire me</button>
     </footer>
 
     <script src="script.js"></script>
